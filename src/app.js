@@ -5,8 +5,8 @@ const cors = require('cors');
 const helmet = require('helmet');
 const { NODE_ENV } = require( './config');
 const authRouter = require('./auth/auth-router')
-const userRouter = require('./users/user-router')
-
+const usersRouter = require('./users/users-router')
+const moviesRouter = require('./movies/movies-router')
 
 const app = express();
 
@@ -18,15 +18,13 @@ app.use(morgan(morganSetting));
 app.use( helmet() );
 app.use( cors() );
 app.use('/login', authRouter)
-app.use('/users', userRouter)
+app.use('/users', usersRouter)
+app.use('/movies', moviesRouter)
+
 
 
 app.get('/', (req, res) => {
 	res.status(200).send('Welcome to Hitchcocktober &#127875');
-})
-
-app.get('/days/:id', (req, res, next) => {
-
 })
 
 app.use(function errorHandler(error, req, res, next) {

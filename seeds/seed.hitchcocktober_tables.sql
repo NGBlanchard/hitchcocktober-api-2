@@ -212,7 +212,7 @@ VALUES
         "meal": "",
         "rating": null
         },
-      "30": {
+     "30": {
         "id": 30,
         "movie_id": null,
         "movie": "",
@@ -226,7 +226,8 @@ VALUES
         "meal": "",
         "rating": null
         }
-    }'
+      }
+    '
   );
 
 INSERT INTO hitchcocktober_movies (id, title, overview, vote_count, poster_path, popularity, vote_average, release_date)

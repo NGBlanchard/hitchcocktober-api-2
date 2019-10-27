@@ -42,24 +42,23 @@ const UsersService = {
       .first()
   },
 
-  deleteUser(knex, id) {
-    return knex('hitchcocktober_users')
-    .where({ id })
-    .delete()
-  },
-
   updateUsers(knex, id, newUserFields) {
     return knex('hitchcocktober_users')
       .where({ id })
       .update(newUserFields)
   },
 
+  deleteUser(knex, id) {
+    return knex('hitchcocktober_users')
+    .where({ id })
+    .delete()
+  },
 
   validatePassword(password) {
   if (password.length < 8) {
     return 'Password must be longer than 8 characters'
   }
-  if (password.length > 60) {
+  if (password.length > 72) {
     return 'Password must be less than 72 characters'
   }
   if (password.startsWith(' ') || password.endsWith(' ')) {
@@ -80,9 +79,10 @@ const UsersService = {
       id: user.id,
       user_name: xss(user.user_name),
       date_created: new Date(user.date_created),
+      days: ( user.days )
     }
   },
 }
 
-module.exports = UsersService
+module.exports = UsersService;
 

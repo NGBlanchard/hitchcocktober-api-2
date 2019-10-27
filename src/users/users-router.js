@@ -1,17 +1,18 @@
 const express = require('express')
 const path = require('path')
-const UsersService = require('./user-service')
+const UsersService = require('./users-service')
 const usersRouter = express.Router()
 const jsonBodyParser = express.json()
 const jsonParser = express.json()
 const xss = require('xss')
 
-const { requireAuth } = require('../middleware/jwt-auth')
+// const { requireAuth } = require('../middleware/jwt-auth')
 
 const serializeUser = user => ({
   id: user.id,
   user_name: xss(user.user_name),
   date_created: user.date_created,
+  days: ( user.days ),
 })
 
 usersRouter
@@ -25,7 +26,7 @@ usersRouter
     .catch(next)
 })
   .post(jsonBodyParser, (req, res, next) => {
-    const { password, user_name } = req.body
+    const { password, user_name, days } = req.body
 
     for (const field of ['user_name', 'password'])
       if (!req.body[field])
@@ -71,7 +72,7 @@ usersRouter
 
   usersRouter
   .route('/:user_id')
-  .all(requireAuth)
+  // .all(requireAuth)
   .all(checkUserExists)
   .all((req, res, next) => {
     UsersService.getById(
@@ -103,9 +104,9 @@ usersRouter
       .catch(next)
   })
   .patch(jsonParser, (req, res, next) => {
-    const { user_name, password, date_created } = req.body
-    const userToUpdate = { user_name, password, date_created }
-
+    const { id, user_name, password, date_created, days } = req.body
+    const userToUpdate = { id, user_name, password, date_created, days }
+    
     const numberOfValues = Object.values(userToUpdate).filter(Boolean).length
     if (numberOfValues === 0)
       return res.status(400).json({
@@ -125,19 +126,19 @@ usersRouter
       .catch(next)
   })
 
-  usersRouter.route('/:user_id/comments/')
-  .all(requireAuth)
-  .all(checkUserExists)
-  .get((req, res, next) => {
-    UsersService.getCommentsForUser(
-      req.app.get('db'),
-      req.params.user_id
-    )
-      .then(comments => {
-        res.json(comments.map(UsersService.serializeUserComment))
-      })
-      .catch(next)
-  })
+  // usersRouter.route('/:user_id/comments/')
+  // .all(requireAuth)
+  // .all(checkUserExists)
+  // .get((req, res, next) => {
+  //   UsersService.getCommentsForUser(
+  //     req.app.get('db'),
+  //     req.params.user_id
+  //   )
+  //     .then(comments => {
+  //       res.json(comments.map(UsersService.serializeUserComment))
+  //     })
+  //     .catch(next)
+  // })
 
 async function checkUserExists(req, res, next) {
   try {
