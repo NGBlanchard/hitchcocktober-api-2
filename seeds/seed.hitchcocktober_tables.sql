@@ -7,1321 +7,226 @@ TRUNCATE
 
 INSERT INTO hitchcocktober_users (user_name, password, days)
 VALUES
-  ('DeLillo', '$2a$12$tNRBcZmsYfIQjAORE6LsI.OxaPvIAswiBTSGGUqu9nnscevCP5/t2', 
-     {
-        '{
-        "id": 1,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 2,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 3,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 4,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 5,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 6,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 7,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 8,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 9,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 10,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 11,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 12,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 13,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 14,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 15,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 16,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 17,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 18,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 19,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 20,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 21,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 22,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 23,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 24,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 25,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 26,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 27,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 28,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 29,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 30,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 31,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }'
-     }
-  ),
-  ('HowlingFantods', '$2a$12$JmL.a9lWts/F.r9OqPrn0.sf8N77UdUNEVlsSQWEqjC6lqZrexP8G',
-      '{
-        "id": 1,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 2,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 3,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 4,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 5,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 6,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 7,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 8,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 9,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 10,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 11,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 12,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 13,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 14,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 15,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 16,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 17,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 18,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 19,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 20,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 21,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 22,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 23,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 24,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 25,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 26,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 27,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 28,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 29,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 30,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 31,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }'
-  ),
-  ('AliSmith', '$2a$12$E/FLLgghsmt.5HKoYy0GbOH17PD5913uHPEuWlVIM1H5CJ00WFlYa',
-      '{
-        "id": 1,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 2,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 3,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 4,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 5,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 6,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 7,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 8,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 9,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 10,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 11,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 12,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 13,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 14,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 15,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 16,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 17,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 18,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 19,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 20,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 21,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 22,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 23,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 24,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 25,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 26,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 27,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 28,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 29,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 30,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 31,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }'
-  ),
-  ('Zadie', '$2a$12$TKhUJy1razGeEv6BO6iKneapzV2V99jzFW9CPVx/FGu620aDU/XWq',
-      '{
-        "id": 1,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 2,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 3,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 4,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 5,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 6,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 7,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 8,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 9,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 10,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 11,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 12,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 13,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 14,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 15,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 16,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 17,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 18,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 19,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 20,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 21,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 22,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 23,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 24,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 25,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 26,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 27,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 28,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 29,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 30,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 31,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }'
-  ),
-  ('JJoyce', '$2a$12$HND1cex0AnEb2OvW35cIee06Lu9k7Vyekc09VUdpr/tUYf5Xn.EhG',
-      '{
-        "id": 1,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 2,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 3,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 4,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 5,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 6,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 7,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 8,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 9,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 10,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 11,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 12,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 13,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 14,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 15,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 16,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 17,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 18,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 19,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 20,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 21,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 22,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 23,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 24,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 25,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 26,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 27,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 28,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 29,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 30,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }',
-      '{
-        "id": 31,
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null
-      }'
-  ),
   ('Archimboldi', '$2a$12$VsD.W/HXu8ae0Wih8Vscr.CYSefcj2fCsByOBCxWp1UISXuZaaSV.',
-      '{
+    '{
+      "1": {
         "id": 1,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "2": {
         "id": 2,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "3": {
         "id": 3,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "4": {
         "id": 4,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "5": {
         "id": 5,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "6": {
         "id": 6,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "7": {
         "id": 7,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "8": {
         "id": 8,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "9": {
         "id": 9,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "10": {
         "id": 10,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "11": {
         "id": 11,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "12": {
         "id": 12,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "13": {
         "id": 13,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "14": {
         "id": 14,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "15": {
         "id": 15,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "16": {
         "id": 16,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "17": {
         "id": 17,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "18": {
         "id": 18,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "19": {
         "id": 19,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "20": {
         "id": 20,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "21": {
         "id": 21,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "22": {
         "id": 22,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "23": {
         "id": 23,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "24": {
         "id": 24,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "25": {
         "id": 25,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "26": {
         "id": 26,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "27": {
         "id": 27,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "28": {
         "id": 28,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "29": {
         "id": 29,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "30": {
         "id": 30,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }',
-      '{
+        },
+      "31": {
         "id": 31,
         "movie_id": null,
         "movie": "",
         "meal": "",
         "rating": null
-      }'
+        }
+    }'
   );
 
 INSERT INTO hitchcocktober_movies (id, title, overview, vote_count, poster_path, popularity, vote_average, release_date)
