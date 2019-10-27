@@ -3,5 +3,5 @@ CREATE TABLE hitchcocktober_users (
   user_name TEXT NOT NULL UNIQUE,
   password VARCHAR(60) NOT NULL,
   date_created TIMESTAMP DEFAULT now() NOT NULL,
-  days json
+  days JSON NOT NULL
 );
