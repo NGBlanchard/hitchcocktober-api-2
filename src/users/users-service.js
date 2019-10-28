@@ -45,7 +45,7 @@ const UsersService = {
   updateUsers(knex, id, newUserFields) {
     return knex('hitchcocktober_users')
       .where({ id })
-      .update(newUserFields)
+      .update({days: newUserFields})
   },
 
   deleteUser(knex, id) {
@@ -53,6 +53,14 @@ const UsersService = {
     .where({ id })
     .delete()
   },
+
+  // getDaysForUser(knex, id) {
+  //   return knex
+  //   .select('days')
+  //   .from('hitchcocktober_users')
+  //   .where({ id })
+  //   .first()
+  // },
 
   validatePassword(password) {
   if (password.length < 8) {
@@ -82,6 +90,17 @@ const UsersService = {
       days: ( user.days )
     }
   },
+
+  // serializeUserDays(day) {
+  //   return {
+  //     id: day.id,
+  //     movie_id: day.movie_id,
+  //     movie: day,movie,
+  //     meal: day.meal,
+  //     rating: day.rating,
+  //   }
+  // },
+  
 }
 
 module.exports = UsersService;

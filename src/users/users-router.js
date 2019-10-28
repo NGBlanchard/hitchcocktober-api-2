@@ -104,21 +104,34 @@ usersRouter
       .catch(next)
   })
   .patch(jsonParser, (req, res, next) => {
-    const { id, user_name, password, date_created, days } = req.body
-    const userToUpdate = { id, user_name, password, date_created, days }
+    const day = Object.getOwnPropertyNames(req.body)
     
-    const numberOfValues = Object.values(userToUpdate).filter(Boolean).length
-    if (numberOfValues === 0)
-      return res.status(400).json({
-        error: {
-          message: `Request body must contain either 'content' or 'modified'`
-        }
-      })
+    // const data = (obj, target) =>
+    //       target in obj
+    //       ? obj[target]
+    //       : Object.values(obj).reduce((acc, val) => {
+    //     if (acc !== undefined) return acc;
+    //     if (typeof val === 'object') return data(val, target);
+    //   }, undefined);
 
-    UsersService.updateUser(
+    console.log(req.body[day])      
+    const { id, movie_id, movie, meal, rating  } = req.body
+    const userToUpdate = { id, movie_id, movie, meal, rating }
+    const updateObj = {day: {userToUpdate}}
+    // const deData = data(req.body, day)
+    
+  //  const numberOfValues = Object.values(userToUpdate).filter(Boolean).length
+  //   if (numberOfValues === 0)
+  //     return res.status(400).json({
+  //       error: {
+  //         message: `Request body must contain either 'content' or 'modified'`
+  //       }
+  //     })
+  
+    UsersService.updateUsers(
       req.app.get('db'),
       req.params.user_id,
-      userToUpdate
+      updateObj,
     )
       .then(numRowsAffected => {
         res.status(204).end()
@@ -126,16 +139,16 @@ usersRouter
       .catch(next)
   })
 
-  // usersRouter.route('/:user_id/comments/')
-  // .all(requireAuth)
+  // usersRouter.route('/:user_id/days/')
+  // // .all(requireAuth)
   // .all(checkUserExists)
   // .get((req, res, next) => {
-  //   UsersService.getCommentsForUser(
+  //   UsersService.getDaysForUser(
   //     req.app.get('db'),
   //     req.params.user_id
   //   )
-  //     .then(comments => {
-  //       res.json(comments.map(UsersService.serializeUserComment))
+  //     .then(days => {
+  //       res.json(days.map(UsersService.serializeUserDays))
   //     })
   //     .catch(next)
   // })
