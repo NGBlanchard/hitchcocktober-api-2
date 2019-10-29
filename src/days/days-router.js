@@ -13,7 +13,7 @@ const serializeDay = day => ({
       day: day.day,
       movie_id: day.movie_id,
       movie: xss(day.movie),
-      meal: xss(day.meal),
+      meal: day.meal,
       rating: day.rating,
       user_id: day.user_id,
 })

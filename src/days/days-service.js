@@ -42,10 +42,9 @@ const DaysService = {
   },
 
   updateDays(knex, id, newDayFields) {
-    console.log(newDayFields)
     return knex('hitchcocktober_days')
       .where({ id })
-      .insert(newDayFields)
+      .update( newDayFields )
   },
 
   deleteDay(knex, id) {

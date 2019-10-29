@@ -45,28 +45,14 @@ const UsersService = {
   updateUsers(knex, id, newUserFields) {
     return knex('hitchcocktober_users')
       .where({ id })
-      .update({days: newUserFields})
+      .update({newUserFields})
   },
-
-  // updateUsers(knex, id, newUserFields) {
-  //   return knex('hitchcocktober_users')
-  //     .where({ id })
-  //     .update({newUserFields})
-  // },
 
   deleteUser(knex, id) {
     return knex('hitchcocktober_users')
     .where({ id })
     .delete()
   },
-
-  // getDaysForUser(knex, id) {
-  //   return knex
-  //   .select('days')
-  //   .from('hitchcocktober_users')
-  //   .where({ id })
-  //   .first()
-  // },
 
   validatePassword(password) {
   if (password.length < 8) {
@@ -94,17 +80,6 @@ const UsersService = {
       user_name: xss(user.user_name),
       date_created: new Date(user.date_created),
       days: ( user.days )
-    }
-  },
-
-  serializeUserDays(day) {
-    return {
-      id: day.id,
-      movie_id: day.movie_id,
-      movie: day.movie,
-      meal: day.meal,
-      rating: day.rating,
-      user_id: day.user_id,
     }
   },
   

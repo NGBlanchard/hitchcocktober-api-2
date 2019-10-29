@@ -114,7 +114,7 @@ usersRouter
     //     if (typeof val === 'object') return data(val, target);
     //   }, undefined);
 
-    console.log(req.body)      
+         
     const { id, movie_id, movie, meal, rating  } = req.body
     const userToUpdate = { id, movie_id, movie, meal, rating }
    
@@ -131,27 +131,13 @@ usersRouter
     UsersService.updateUsers(
       req.app.get('db'),
       req.params.user_id,
-      req.body,
+      userToUpdate,
     )
       .then(numRowsAffected => {
         res.status(204).end()
       })
       .catch(next)
   })
-
-  // usersRouter.route('/:user_id/days/')
-  // // .all(requireAuth)
-  // .all(checkUserExists)
-  // .get((req, res, next) => {
-  //   UsersService.getDaysForUser(
-  //     req.app.get('db'),
-  //     req.params.user_id
-  //   )
-  //     .then(days => {
-  //       res.json(days.map(UsersService.serializeUserDays))
-  //     })
-  //     .catch(next)
-  // })
 
 async function checkUserExists(req, res, next) {
   try {
