@@ -114,10 +114,10 @@ usersRouter
     //     if (typeof val === 'object') return data(val, target);
     //   }, undefined);
 
-    console.log(req.body[day])      
+    console.log(req.body)      
     const { id, movie_id, movie, meal, rating  } = req.body
     const userToUpdate = { id, movie_id, movie, meal, rating }
-    const updateObj = {day: {userToUpdate}}
+   
     // const deData = data(req.body, day)
     
   //  const numberOfValues = Object.values(userToUpdate).filter(Boolean).length
@@ -131,7 +131,7 @@ usersRouter
     UsersService.updateUsers(
       req.app.get('db'),
       req.params.user_id,
-      updateObj,
+      req.body,
     )
       .then(numRowsAffected => {
         res.status(204).end()

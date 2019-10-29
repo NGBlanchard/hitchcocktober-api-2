@@ -48,6 +48,12 @@ const UsersService = {
       .update({days: newUserFields})
   },
 
+  // updateUsers(knex, id, newUserFields) {
+  //   return knex('hitchcocktober_users')
+  //     .where({ id })
+  //     .update({newUserFields})
+  // },
+
   deleteUser(knex, id) {
     return knex('hitchcocktober_users')
     .where({ id })
@@ -91,15 +97,16 @@ const UsersService = {
     }
   },
 
-  // serializeUserDays(day) {
-  //   return {
-  //     id: day.id,
-  //     movie_id: day.movie_id,
-  //     movie: day,movie,
-  //     meal: day.meal,
-  //     rating: day.rating,
-  //   }
-  // },
+  serializeUserDays(day) {
+    return {
+      id: day.id,
+      movie_id: day.movie_id,
+      movie: day.movie,
+      meal: day.meal,
+      rating: day.rating,
+      user_id: day.user_id,
+    }
+  },
   
 }
 

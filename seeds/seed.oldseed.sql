@@ -5,9 +5,229 @@ TRUNCATE
   hitchcocktober_users
   RESTART IDENTITY CASCADE;
 
-INSERT INTO hitchcocktober_users (user_name, password )
+INSERT INTO hitchcocktober_users (user_name, password, days)
 VALUES
-  ('Archimboldi', '$2a$12$VsD.W/HXu8ae0Wih8Vscr.CYSefcj2fCsByOBCxWp1UISXuZaaSV.'
+  ('Archimboldi', '$2a$12$VsD.W/HXu8ae0Wih8Vscr.CYSefcj2fCsByOBCxWp1UISXuZaaSV.',
+    '{
+      "1": {
+        "id": 1,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "2": {
+        "id": 2,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "3": {
+        "id": 3,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "4": {
+        "id": 4,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "5": {
+        "id": 5,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "6": {
+        "id": 6,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "7": {
+        "id": 7,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "8": {
+        "id": 8,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "9": {
+        "id": 9,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "10": {
+        "id": 10,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "11": {
+        "id": 11,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "12": {
+        "id": 12,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "13": {
+        "id": 13,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "14": {
+        "id": 14,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "15": {
+        "id": 15,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "16": {
+        "id": 16,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "17": {
+        "id": 17,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "18": {
+        "id": 18,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "19": {
+        "id": 19,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "20": {
+        "id": 20,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "21": {
+        "id": 21,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "22": {
+        "id": 22,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "23": {
+        "id": 23,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "24": {
+        "id": 24,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "25": {
+        "id": 25,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "26": {
+        "id": 26,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "27": {
+        "id": 27,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "28": {
+        "id": 28,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "29": {
+        "id": 29,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+     "30": {
+        "id": 30,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        },
+      "31": {
+        "id": 31,
+        "movie_id": null,
+        "movie": "",
+        "meal": "",
+        "rating": null
+        }
+      }
+    '
   );
 
 INSERT INTO hitchcocktober_movies (id, title, overview, vote_count, poster_path, popularity, vote_average, release_date)
