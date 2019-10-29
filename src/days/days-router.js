@@ -6,7 +6,7 @@ const jsonBodyParser = express.json()
 const jsonParser = express.json()
 const xss = require('xss')
 
-// const { requireAuth } = require('../middleware/jwt-auth')
+const { requireAuth } = require('../middleware/jwt-auth')
 
 const serializeDay = day => ({
       id: day.id,
@@ -75,7 +75,7 @@ daysRouter
 
   daysRouter
   .route('/:day_id')
-  // .all(requireAuth)
+  .all(requireAuth)
   .all(checkDayExists)
   .all((req, res, next) => {
     DaysService.getById(

@@ -6,13 +6,12 @@ const jsonBodyParser = express.json()
 const jsonParser = express.json()
 const xss = require('xss')
 
-// const { requireAuth } = require('../middleware/jwt-auth')
+const { requireAuth } = require('../middleware/jwt-auth')
 
 const serializeUser = user => ({
   id: user.id,
   user_name: xss(user.user_name),
   date_created: user.date_created,
-  days: ( user.days ),
 })
 
 usersRouter

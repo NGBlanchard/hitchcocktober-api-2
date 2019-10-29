@@ -85,5 +85,5 @@ const UsersService = {
   
 }
 
-module.exports = UsersService;
+module.exports = UsersService
 
