@@ -111,39 +111,22 @@ usersRouter
       .catch(next)
   })
   .patch(jsonParser, (req, res, next) => {
-    const day = Object.getOwnPropertyNames(req.body)
-    
-    // const data = (obj, target) =>
-    //       target in obj
-    //       ? obj[target]
-    //       : Object.values(obj).reduce((acc, val) => {
-    //     if (acc !== undefined) return acc;
-    //     if (typeof val === 'object') return data(val, target);
-    //   }, undefined);
-
-         
-    const { id, movie_id, movie, meal, rating  } = req.body
-    const userToUpdate = { id, movie_id, movie, meal, rating }
-   
-    // const deData = data(req.body, day)
-    
-  //  const numberOfValues = Object.values(userToUpdate).filter(Boolean).length
-  //   if (numberOfValues === 0)
-  //     return res.status(400).json({
-  //       error: {
-  //         message: `Request body must contain either 'content' or 'modified'`
-  //       }
-  //     })
-  
+    // const { id, movie_id, movie, meal, rating  } = req.body
+    // const userToUpdate = { id, movie_id, movie, meal, rating }
+      const userToUpdate = req.body
     UsersService.updateUsers(
       req.app.get('db'),
       req.params.user_id,
-      req.body
+      userToUpdate
     )
-      .then(numRowsAffected => {
-        res.status(204).end()
+      .then((updatedUser) => {
+        res.status(204);
+        res.send(JSON.stringify(updatedUser));
       })
-      .catch(next)
+      .catch((err) => {
+        res.status(404);
+        res.end();
+      })
   })
 
 async function checkUserExists(req, res, next) {
