@@ -28,54 +28,34 @@ daysRouter
     })
     .catch(next)
 })
-  .post(jsonBodyParser, (req, res, next) => {
-    const { password, day_name, days } = req.body
+.post(jsonParser, (req, res, next) => {
+  const { day, movie_id, movie, rating, user_id  } = req.body
+  const newDay = { day, movie_id, movie, rating, user_id }
 
-    for (const field of ['day_name', 'password'])
-      if (!req.body[field])
-        return res.status(400).json({
-          error: `Missing '${field}' in request body`
-        })
+  // for (const [key, value] of Object.entries(newDay)) {
+  //   if (value == null) {
+  //     return res.status(400).json({
+  //       error: { message: `Missing '${key}' in request body` }
+  //     })
+  //   }
+  // }   
 
-        const passwordError = DaysService.validatePassword(password)
-
-        if (passwordError)
-          return res.status(400).json({ error: passwordError })
-        
-          DaysService.hasDayWithDayName(
-            req.app.get('db'),
-            day_name
-          )
-          .then(hasDayWithDayName => {
-            if (hasDayWithDayName)
-            return res.status(400).json({ error: `Dayname already taken` })
-            
-            return DaysService.hashPassword(password)
-              .then(hashedPassword => {
-                const newDay = {
-                  day_name,
-                  password: hashedPassword,
-                  date_created: 'now()',
-                }
-
-            return DaysService.insertDay(
-             req.app.get('db'),
-              newDay
-            )
-              .then(day => {
-              res
-                .status(201)
-                .location(path.posix.join(req.originalUrl, `/${day.id}`))
-                .json(DaysService.serializeDay(day))
-            })  
-          })
-        })
-        .catch(next)
-  })
+  DaysService.insertDay(
+    req.app.get('db'),
+    newDay
+  )
+    .then(day => {
+      res
+        .status(201)
+        .location(path.posix.join(req.originalUrl, `/${day.id}`))
+        .json(serializeDay(day))
+    })
+    .catch(next)
+})
 
   daysRouter
   .route('/:day_id')
-  .all(requireAuth)
+  // .all(requireAuth)
   .all(checkDayExists)
   .all((req, res, next) => {
     DaysService.getById(
