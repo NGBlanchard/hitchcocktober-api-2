@@ -111,9 +111,7 @@ usersRouter
       .catch(next)
   })
   .patch(jsonParser, (req, res, next) => {
-    // const { id, movie_id, movie, meal, rating  } = req.body
-    // const userToUpdate = { id, movie_id, movie, meal, rating }
-      const userToUpdate = req.body
+    const userToUpdate = req.body
     UsersService.updateUsers(
       req.app.get('db'),
       req.params.user_id,

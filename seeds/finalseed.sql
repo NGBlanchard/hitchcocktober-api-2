@@ -12,187 +12,218 @@ VALUES
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
      '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }',
       '{
         "movie_id": null,
         "movie": "",
         "meal": "",
-        "rating": null
+        "rating": null,
+        "poster_path": ""
         }'
   );
 

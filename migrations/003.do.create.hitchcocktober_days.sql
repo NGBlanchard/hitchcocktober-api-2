@@ -5,6 +5,7 @@ CREATE TABLE hitchcocktober_days (
   movie TEXT,
   meal JSON,
   rating INTEGER,
+  poster_path TEXT,
   user_id INTEGER
     REFERENCES hitchcocktober_users(id) ON DELETE CASCADE NOT NULL
 );
