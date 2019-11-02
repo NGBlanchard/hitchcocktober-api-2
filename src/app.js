@@ -7,7 +7,6 @@ const { NODE_ENV } = require( './config');
 const authRouter = require('./auth/auth-router')
 const usersRouter = require('./users/users-router')
 const moviesRouter = require('./movies/movies-router')
-const daysRouter = require('./days/days-router')
 
 
 const app = express();
@@ -22,7 +21,6 @@ app.use( cors() );
 app.use('/login', authRouter)
 app.use('/users', usersRouter)
 app.use('/movies', moviesRouter)
-app.use('/days', daysRouter)
 
 
 

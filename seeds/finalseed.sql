@@ -13,6 +13,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -20,6 +21,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -27,6 +29,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -34,6 +37,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -41,6 +45,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -48,6 +53,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -55,6 +61,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -62,6 +69,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -69,6 +77,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -76,6 +85,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -83,6 +93,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -90,6 +101,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -97,6 +109,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -104,6 +117,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -111,6 +125,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -118,6 +133,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -125,6 +141,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -132,6 +149,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -139,6 +157,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -146,6 +165,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -153,6 +173,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -160,6 +181,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -167,6 +189,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -174,6 +197,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -181,6 +205,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -188,6 +213,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -195,6 +221,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -202,6 +229,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -209,6 +237,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
      '{
@@ -216,6 +245,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }',
       '{
@@ -223,6 +253,7 @@ VALUES
         "movie": "",
         "meal": "",
         "rating": null,
+        "seen": false,
         "poster_path": ""
         }'
   );

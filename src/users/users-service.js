@@ -43,6 +43,7 @@ const UsersService = {
   },
 
   updateUsers(knex, id, newUserFields) {
+    console.log(newUserFields)
     return knex('hitchcocktober_users')
       .where({ id })
       .update(newUserFields)
