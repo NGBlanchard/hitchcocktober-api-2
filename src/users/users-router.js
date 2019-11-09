@@ -95,7 +95,6 @@ usersRouter
 
 usersRouter
   .route("/:user_id")
-  // .all(requireAuth)
   .all(checkUserExists)
   .all((req, res, next) => {
     UsersService.getById(req.app.get("db"), req.params.user_id)
