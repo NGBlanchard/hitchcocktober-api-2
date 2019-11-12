@@ -1,5 +1,5 @@
-const bcrypt = require('bcryptjs')
-const jwt = require('jsonwebtoken')
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
 
 function makeUsersArray() {
   return [
@@ -44,7 +44,7 @@ function makeUsersArray() {
       id: 17979,
       user_name: `"test-user-1"`,
       password: `"password"`,
-      date_created: new Date('2029-01-22T16:28:32.615Z'),
+      date_created: new Date("2029-01-22T16:28:32.615Z"),
       oct1: `"stuff"`,
       oct2: `"stuff"`,
       oct3: `"stuff"`,
@@ -81,7 +81,7 @@ function makeUsersArray() {
       id: 3234123,
       user_name: `"test-user-3"`,
       password: `"password"`,
-      date_created: new Date('2029-01-22T16:28:32.615Z'),
+      date_created: new Date("2029-01-22T16:28:32.615Z"),
       oct1: `"stuff"`,
       oct2: `"stuff"`,
       oct3: `"stuff"`,
@@ -118,7 +118,7 @@ function makeUsersArray() {
       id: 4452345,
       user_name: `"test-user-4"`,
       password: `"password"`,
-      date_created: new Date('2029-01-22T16:28:32.615Z'),
+      date_created: new Date("2029-01-22T16:28:32.615Z"),
       oct1: `"stuff"`,
       oct2: `"stuff"`,
       oct3: `"stuff"`,
@@ -150,52 +150,60 @@ function makeUsersArray() {
       oct29: `"stuff"`,
       oct30: `"stuff"`,
       oct31: `"stuff"`
-    },
-  ]
+    }
+  ];
 }
 function makeMoviesArray() {
   return [
     {
       id: 1,
       title: "First test movie!",
-      overview: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?",
+      overview:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?",
       vote_count: 9,
-      poster_path: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?",
+      poster_path:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?",
       popularity: 16,
       vote_average: 2,
-      release_date: "whenever",
+      release_date: "whenever"
     },
     {
       id: 2,
-      title: 'Second test movie!',
-      overview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?',
+      title: "Second test movie!",
+      overview:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?",
       vote_count: 88,
-      poster_path: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?',
+      poster_path:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?",
       popularity: 16,
       vote_average: 3,
-      release_date: "whenever",
+      release_date: "whenever"
     },
     {
       id: 3,
-      title: 'Third test movie!',
-      overview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?',
+      title: "Third test movie!",
+      overview:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?",
       vote_count: 6,
-      poster_path: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?',
+      poster_path:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?",
       popularity: 16,
       vote_average: 2,
-      release_date: "whenever",
+      release_date: "whenever"
     },
     {
       id: 4,
-      title: 'Fourth test movie!',
-      overview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?',
+      title: "Fourth test movie!",
+      overview:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?",
       vote_count: 54,
-      poster_path: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?',
+      poster_path:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?",
       popularity: 16,
       vote_average: 9,
-      release_date: "whenever",
-    },
-  ]
+      release_date: "whenever"
+    }
+  ];
 }
 function makeExpectedUser(users) {
   return {
@@ -234,62 +242,63 @@ function makeExpectedUser(users) {
     oct28: users.oct28,
     oct29: users.oct29,
     oct30: users.oct30,
-    oct31: users.oct31,
-  }
+    oct31: users.oct31
+  };
 }
 
 function makeMaliciousUser() {
   const maliciousUsers = {
-      id: 911,
-      user_name: 'How-to',
-      password: 'password',
-      date_created: new Date('2029-01-22T16:28:32.615Z'),
-      oct1: 'Naughty naughty very naughty <script>alert("xss");</script>',
-      oct2: `"stuff"`,
-      oct3: `"stuff"`,
-      oct4: `"stuff"`,
-      oct5: `"stuff"`,
-      oct6: `"stuff"`,
-      oct7: `"stuff"`,
-      oct8: `"stuff"`,
-      oct9: `"stuff"`,
-      oct10: `"stuff"`,
-      oct11: `"stuff"`,
-      oct12: `"stuff"`,
-      oct13: `"stuff"`,
-      oct14: `"stuff"`,
-      oct15: `"stuff"`,
-      oct16: `"stuff"`,
-      oct17: `"stuff"`,
-      oct18: `"stuff"`,
-      oct19: `"stuff"`,
-      oct20: `"stuff"`,
-      oct21: `"stuff"`,
-      oct22: `"stuff"`,
-      oct23: `"stuff"`,
-      oct24: `"stuff"`,
-      oct25: `"stuff"`,
-      oct26: `"stuff"`,
-      oct27: `"stuff"`,
-      oct28: `"stuff"`,
-      oct29: `"stuff"`,
-      oct30: `"stuff"`,
-      oct31: `"stuff"`
-  }
+    id: 911,
+    user_name: "How-to",
+    password: "password",
+    date_created: new Date("2029-01-22T16:28:32.615Z"),
+    oct1: 'Naughty naughty very naughty <script>alert("xss");</script>',
+    oct2: `"stuff"`,
+    oct3: `"stuff"`,
+    oct4: `"stuff"`,
+    oct5: `"stuff"`,
+    oct6: `"stuff"`,
+    oct7: `"stuff"`,
+    oct8: `"stuff"`,
+    oct9: `"stuff"`,
+    oct10: `"stuff"`,
+    oct11: `"stuff"`,
+    oct12: `"stuff"`,
+    oct13: `"stuff"`,
+    oct14: `"stuff"`,
+    oct15: `"stuff"`,
+    oct16: `"stuff"`,
+    oct17: `"stuff"`,
+    oct18: `"stuff"`,
+    oct19: `"stuff"`,
+    oct20: `"stuff"`,
+    oct21: `"stuff"`,
+    oct22: `"stuff"`,
+    oct23: `"stuff"`,
+    oct24: `"stuff"`,
+    oct25: `"stuff"`,
+    oct26: `"stuff"`,
+    oct27: `"stuff"`,
+    oct28: `"stuff"`,
+    oct29: `"stuff"`,
+    oct30: `"stuff"`,
+    oct31: `"stuff"`
+  };
   const expectedUser = {
     ...makeExpectedUser([user], maliciousUser),
-    desoverviewcription: 'Naughty naughty very naughty &lt;script&gt;alert(\"xss\");&lt;/script&gt;',
-    title: `Bad image <img src="https://url.to.file.which/does-not.exist">. But not <strong>all</strong> bad.`,
-  }
+    desoverviewcription:
+      'Naughty naughty very naughty &lt;script&gt;alert("xss");&lt;/script&gt;',
+    title: `Bad image <img src="https://url.to.file.which/does-not.exist">. But not <strong>all</strong> bad.`
+  };
   return {
     maliciousUdser,
-    expectedUser,
-  }
+    expectedUser
+  };
 }
 function makeUsersFixtures() {
-  const testUsers = makeUsersArray()
-  const testMovies = makeMoviesArray()
-  return { testUsers, testMovies }
+  const testUsers = makeUsersArray();
+  const testMovies = makeMoviesArray();
+  return { testUsers, testMovies };
 }
 function cleanTables(db) {
   return db.transaction(trx =>
@@ -299,78 +308,45 @@ function cleanTables(db) {
         hitchcocktober_movies
       `
     )
-    // .then(() =>
-    //   Promise.all([
-    //     trx.raw(`ALTER SEQUENCE hitchcocktober_users_id_seq minvalue 0 START WITH 1`),
-    //     trx.raw(`ALTER SEQUENCE hitchcocktober_movies_id_seq minvalue 0 START WITH 1`),
-    //     trx.raw(`SELECT setval("hitchcocktober_users_id_seq", 1)`),
-    //     trx.raw(`SELECT setval("hitchcocktober_movies_id_seq", 1)`),
-    //   ])
-    // )
-  )
+  );
 }
 function seedUsers(db, users) {
   const preppedUsers = users.map(user => ({
     ...user,
     password: bcrypt.hashSync(user.password, 1)
-  }))
-  return db.into('hitchcocktober_users').insert(preppedUsers)
-    // .then(() =>
-    //   db.raw(
-    //     `SELECT setval('hitchcocktober_users_id_seq', ?)`,
-    //     [users[users.length - 1].id],
-    //   )
-    // )
+  }));
+  return db.into("hitchcocktober_users").insert(preppedUsers);
 }
 function seedMovies(db, movies) {
   const preppedMovies = movies.map(movie => ({
-    ...movie,
-  }))
-  return db.into('hitchcocktober_movies').insert(preppedMovies)
-    // .then(() =>
-    //   db.raw(
-    //     'SELECT setval("hitchcocktober_movies_id_seq", ?)',
-    //     [movies[movies.length - 1].id],
-    //   )
-    // )
+    ...movie
+  }));
+  return db.into("hitchcocktober_movies").insert(preppedMovies);
 }
 function seedUsersTables(db, users) {
-
   return db.transaction(async trx => {
-    await seedUsers(trx, users)
-    await trx.into('hitchcocktober_users').insert(users)
-    // await trx.raw(
-    //   `SELECT setval('hitchcocktober_users_id_seq', ?)`,
-    //   [users[users.length - 1].id],
-    // )
-  })
+    await seedUsers(trx, users);
+    await trx.into("hitchcocktober_users").insert(users);
+  });
 }
 function seedMoviesTables(db, movies) {
-
   return db.transaction(async trx => {
-    await seedMovies(trx, movies)
-    await trx.into('hitchcocktober_movies').insert(movies)
-    // await trx.raw(
-    //   'SELECT setval("hitchcocktober_movies_id_seq", ?)',
-    //   [movies[movies.length - 1].id],
-    // )
-  })
+    await seedMovies(trx, movies);
+    await trx.into("hitchcocktober_movies").insert(movies);
+  });
 }
 function seedMaliciousUser(db, user) {
-  return seedUsers(db, [user])
-    .then(() =>
-      db
-        .into('hitchcocktober_users')
-        .insert([user])
-    )
+  return seedUsers(db, [user]).then(() =>
+    db.into("hitchcocktober_users").insert([user])
+  );
 }
 
 function makeAuthHeader(user, secret = process.env.JWT_SECRET) {
   const token = jwt.sign({ user_id: user.id }, secret, {
     subject: user.user_name,
-    algorithm: 'HS256',
-  })
-  return `Bearer ${token}`
+    algorithm: "HS256"
+  });
+  return `Bearer ${token}`;
 }
 
 module.exports = {
@@ -384,5 +360,5 @@ module.exports = {
   makeAuthHeader,
   seedUsers,
   makeMoviesArray,
-  seedMoviesTables,
-}
+  seedMoviesTables
+};
