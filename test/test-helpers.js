@@ -299,14 +299,14 @@ function cleanTables(db) {
         hitchcocktober_movies
       `
     )
-    .then(() =>
-      Promise.all([
-        trx.raw(`ALTER SEQUENCE hitchcocktober_users_id_seq minvalue 0 START WITH 1`),
-        trx.raw(`ALTER SEQUENCE hitchcocktober_movies_id_seq minvalue 0 START WITH 1`),
-        trx.raw(`SELECT setval("hitchcocktober_users_id_seq", 1)`),
-        trx.raw(`SELECT setval("hitchcocktober_movies_id_seq", 1)`),
-      ])
-    )
+    // .then(() =>
+    //   Promise.all([
+    //     trx.raw(`ALTER SEQUENCE hitchcocktober_users_id_seq minvalue 0 START WITH 1`),
+    //     trx.raw(`ALTER SEQUENCE hitchcocktober_movies_id_seq minvalue 0 START WITH 1`),
+    //     trx.raw(`SELECT setval("hitchcocktober_users_id_seq", 1)`),
+    //     trx.raw(`SELECT setval("hitchcocktober_movies_id_seq", 1)`),
+    //   ])
+    // )
   )
 }
 function seedUsers(db, users) {
@@ -315,36 +315,34 @@ function seedUsers(db, users) {
     password: bcrypt.hashSync(user.password, 1)
   }))
   return db.into('hitchcocktober_users').insert(preppedUsers)
-    .then(() =>
-      db.raw(
-        `SELECT setval('hitchcocktober_users_id_seq', ?)`,
-        [users[users.length - 1].id],
-      )
-    )
+    // .then(() =>
+    //   db.raw(
+    //     `SELECT setval('hitchcocktober_users_id_seq', ?)`,
+    //     [users[users.length - 1].id],
+    //   )
+    // )
 }
 function seedMovies(db, movies) {
   const preppedMovies = movies.map(movie => ({
     ...movie,
   }))
   return db.into('hitchcocktober_movies').insert(preppedMovies)
-    .then(() =>
-      db.raw(
-        'SELECT setval("hitchcocktober_movies_id_seq", ?)',
-        [movies[movies.length - 1].id],
-      )
-    )
+    // .then(() =>
+    //   db.raw(
+    //     'SELECT setval("hitchcocktober_movies_id_seq", ?)',
+    //     [movies[movies.length - 1].id],
+    //   )
+    // )
 }
 function seedUsersTables(db, users) {
 
   return db.transaction(async trx => {
     await seedUsers(trx, users)
     await trx.into('hitchcocktober_users').insert(users)
-
-    await trx.raw(
-      `SELECT setval('hitchcocktober_users_id_seq', ?)`,
-      [users[users.length - 1].id],
-    )
-
+    // await trx.raw(
+    //   `SELECT setval('hitchcocktober_users_id_seq', ?)`,
+    //   [users[users.length - 1].id],
+    // )
   })
 }
 function seedMoviesTables(db, movies) {
@@ -352,12 +350,10 @@ function seedMoviesTables(db, movies) {
   return db.transaction(async trx => {
     await seedMovies(trx, movies)
     await trx.into('hitchcocktober_movies').insert(movies)
-
-    await trx.raw(
-      'SELECT setval("hitchcocktober_movies_id_seq", ?)',
-      [movies[movies.length - 1].id],
-    )
-
+    // await trx.raw(
+    //   'SELECT setval("hitchcocktober_movies_id_seq", ?)',
+    //   [movies[movies.length - 1].id],
+    // )
   })
 }
 function seedMaliciousUser(db, user) {
