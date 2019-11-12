@@ -4,552 +4,303 @@ const jwt = require('jsonwebtoken')
 function makeUsersArray() {
   return [
     {
-    id: 1,
-    user_name: 'Archimboldi', 
-    password: '$2a$12$VsD.W/HXu8ae0Wih8Vscr.CYSefcj2fCsByOBCxWp1UISXuZaaSV.',
-    date_created: new Date('2029-01-22T16:28:32.615Z'),
-    oct1: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct2: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct3: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct4: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct5: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct6: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct7: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct8: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct9: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct10: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct11: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct12: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct13: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct14: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct15: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct16: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct17: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct18: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct19: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct20: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct21: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct22: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct23: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct24: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct25: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct26: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct27: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct28: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct29: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct30: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        },
-    oct31: {
-        "movie_id": null,
-        "movie": "",
-        "meal": "",
-        "rating": null,
-        "seen": false,
-        "poster_path": ""
-        }
-      },
-      {id: 2,
-        user_name: 'UserName', 
-        password: '$2a$12$VsD.W/HXu8ae0Wih8Vscr.CYSefcj2fCsByOBCxWp1UISXuZaaSV.',
-        date_created: new Date('2029-01-22T16:28:32.615Z'),
-        oct1: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct2: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct3: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct4: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct5: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct6: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct7: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct8: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct9: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct10: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct11: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct12: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct13: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct14: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct15: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct16: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct17: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct18: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct19: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct20: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct21: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct22: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct23: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct24: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct25: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct26: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct27: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct28: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct29: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct30: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            },
-        oct31: {
-            "movie_id": null,
-            "movie": "",
-            "meal": "",
-            "rating": null,
-            "seen": false,
-            "poster_path": ""
-            }
-          },
+      id: 2,
+      user_name: 'test-user-2',
+      password: 'password',
+      date_created: new Date('2029-01-22T16:28:32.615Z'),
+      oct1: 'stuff',
+      oct2: 'stuff',
+      oct3: 'stuff',
+      oct4: 'stuff',
+      oct5: 'stuff',
+      oct6: 'stuff',
+      oct7: 'stuff',
+      oct8: 'stuff',
+      oct9: 'stuff',
+      oct10: 'stuff',
+      oct11: 'stuff',
+      oct12: 'stuff',
+      oct13: 'stuff',
+      oct14: 'stuff',
+      oct15: 'stuff',
+      oct16: 'stuff',
+      oct17: 'stuff',
+      oct18: 'stuff',
+      oct19: 'stuff',
+      oct20: 'stuff',
+      oct21: 'stuff',
+      oct22: 'stuff',
+      oct23: 'stuff',
+      oct24: 'stuff',
+      oct25: 'stuff',
+      oct26: 'stuff',
+      oct27: 'stuff',
+      oct28: 'stuff',
+      oct29: 'stuff',
+      oct30: 'stuff',
+      oct31: 'stuff'
+    },
+    {
+      id: 1,
+      user_name: 'test-user-1',
+      password: 'password',
+      date_created: new Date('2029-01-22T16:28:32.615Z'),
+      oct1: 'stuff',
+      oct2: 'stuff',
+      oct3: 'stuff',
+      oct4: 'stuff',
+      oct5: 'stuff',
+      oct6: 'stuff',
+      oct7: 'stuff',
+      oct8: 'stuff',
+      oct9: 'stuff',
+      oct10: 'stuff',
+      oct11: 'stuff',
+      oct12: 'stuff',
+      oct13: 'stuff',
+      oct14: 'stuff',
+      oct15: 'stuff',
+      oct16: 'stuff',
+      oct17: 'stuff',
+      oct18: 'stuff',
+      oct19: 'stuff',
+      oct20: 'stuff',
+      oct21: 'stuff',
+      oct22: 'stuff',
+      oct23: 'stuff',
+      oct24: 'stuff',
+      oct25: 'stuff',
+      oct26: 'stuff',
+      oct27: 'stuff',
+      oct28: 'stuff',
+      oct29: 'stuff',
+      oct30: 'stuff',
+      oct31: 'stuff'
+    },
+    {
+      id: 3,
+      user_name: 'test-user-3',
+      password: 'password',
+      date_created: new Date('2029-01-22T16:28:32.615Z'),
+      oct1: 'stuff',
+      oct2: 'stuff',
+      oct3: 'stuff',
+      oct4: 'stuff',
+      oct5: 'stuff',
+      oct6: 'stuff',
+      oct7: 'stuff',
+      oct8: 'stuff',
+      oct9: 'stuff',
+      oct10: 'stuff',
+      oct11: 'stuff',
+      oct12: 'stuff',
+      oct13: 'stuff',
+      oct14: 'stuff',
+      oct15: 'stuff',
+      oct16: 'stuff',
+      oct17: 'stuff',
+      oct18: 'stuff',
+      oct19: 'stuff',
+      oct20: 'stuff',
+      oct21: 'stuff',
+      oct22: 'stuff',
+      oct23: 'stuff',
+      oct24: 'stuff',
+      oct25: 'stuff',
+      oct26: 'stuff',
+      oct27: 'stuff',
+      oct28: 'stuff',
+      oct29: 'stuff',
+      oct30: 'stuff',
+      oct31: 'stuff'
+    },
+    {
+      id: 4,
+      user_name: 'test-user-4',
+      password: 'password',
+      date_created: new Date('2029-01-22T16:28:32.615Z'),
+      oct1: 'stuff',
+      oct2: 'stuff',
+      oct3: 'stuff',
+      oct4: 'stuff',
+      oct5: 'stuff',
+      oct6: 'stuff',
+      oct7: 'stuff',
+      oct8: 'stuff',
+      oct9: 'stuff',
+      oct10: 'stuff',
+      oct11: 'stuff',
+      oct12: 'stuff',
+      oct13: 'stuff',
+      oct14: 'stuff',
+      oct15: 'stuff',
+      oct16: 'stuff',
+      oct17: 'stuff',
+      oct18: 'stuff',
+      oct19: 'stuff',
+      oct20: 'stuff',
+      oct21: 'stuff',
+      oct22: 'stuff',
+      oct23: 'stuff',
+      oct24: 'stuff',
+      oct25: 'stuff',
+      oct26: 'stuff',
+      oct27: 'stuff',
+      oct28: 'stuff',
+      oct29: 'stuff',
+      oct30: 'stuff',
+      oct31: 'stuff'
+    },
   ]
 }
+function makeMoviesArray() {
+  return [
+    {
+      id: 1,
+      title: 'First test movie!',
+      overview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?',
+      vote_count: 9,
+      poster_path: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?',
+      popularity: 16,
+      vote_average: 2,
+      release_date: "whenever",
+    },
+    {
+      id: 2,
+      title: 'Second test movie!',
+      overview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?',
+      vote_count: 88,
+      poster_path: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?',
+      popularity: 16,
+      vote_average: 3,
+      release_date: "whenever",
+    },
+    {
+      id: 3,
+      title: 'Third test movie!',
+      overview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?',
+      vote_count: 6,
+      poster_path: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?',
+      popularity: 16,
+      vote_average: 2,
+      release_date: "whenever",
+    },
+    {
+      id: 4,
+      title: 'Fourth test movie!',
+      overview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?',
+      vote_count: 54,
+      poster_path: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus consequuntur deserunt commodi, nobis qui inventore corrupti iusto aliquid debitis unde non.Adipisci, pariatur.Molestiae, libero esse hic adipisci autem neque ?',
+      popularity: 16,
+      vote_average: 9,
+      release_date: "whenever",
+    },
+  ]
+}
+function makeExpectedUser(users) {
+  return {
+    id: users.id,
+    user_name: users.user_name,
+    password: users.overview,
+    vote_count: users.vote_count,
+    date_created: users.date_created,
+    oct1: users.oct1,
+    oct2: users.oct2,
+    oct3: users.oct3,
+    oct4: users.oct4,
+    oct5: users.oct5,
+    oct6: users.oct6,
+    oct7: users.oct7,
+    oct8: users.oct8,
+    oct9: users.oct9,
+    oct10: users.oct10,
+    oct11: users.oct11,
+    oct12: users.oct12,
+    oct13: users.oct13,
+    oct14: users.oct14,
+    oct15: users.oct15,
+    oct16: users.oct16,
+    oct17: users.oct17,
+    oct18: users.oct18,
+    oct19: users.oct19,
+    oct20: users.oct20,
+    oct21: users.oct21,
+    oct22: users.oct22,
+    oct23: users.oct23,
+    oct24: users.oct24,
+    oct25: users.oct25,
+    oct26: users.oct26,
+    oct27: users.oct27,
+    oct28: users.oct28,
+    oct29: users.oct29,
+    oct30: users.oct30,
+    oct31: users.oct31,
+  }
+}
 
-// function makeMaliciousCourse(user) {
-//   const maliciousCourse = {
-//     id: 911,
-//     title: 'How-to',
-//     description: 'Naughty naughty very naughty <script>alert("xss");</script>',
-//     notes: `Bad image <img src="https://url.to.file.which/does-not.exist" onerror="alert(document.cookie);">. But not <strong>all</strong> bad.`,
-//     readings: 'uh oh',
-//     topic: 'Writing',
-//     date_created: new Date(),
-//     author: user.id,
-//   }
-//   const expectedCourse = {
-//     ...makeExpectedCourse([user], maliciousCourse),
-//     description: 'Naughty naughty very naughty &lt;script&gt;alert(\"xss\");&lt;/script&gt;',
-//     notes: `Bad image <img src="https://url.to.file.which/does-not.exist">. But not <strong>all</strong> bad.`,
-//   }
-//   return {
-//     maliciousCourse,
-//     expectedCourse,
-//   }
-// }
+function makeMaliciousUser() {
+  const maliciousUsers = {
+      id: 911,
+      user_name: 'How-to',
+      password: 'password',
+      date_created: new Date('2029-01-22T16:28:32.615Z'),
+      oct1: 'Naughty naughty very naughty <script>alert("xss");</script>',
+      oct2: 'stuff',
+      oct3: 'stuff',
+      oct4: 'stuff',
+      oct5: 'stuff',
+      oct6: 'stuff',
+      oct7: 'stuff',
+      oct8: 'stuff',
+      oct9: 'stuff',
+      oct10: 'stuff',
+      oct11: 'stuff',
+      oct12: 'stuff',
+      oct13: 'stuff',
+      oct14: 'stuff',
+      oct15: 'stuff',
+      oct16: 'stuff',
+      oct17: 'stuff',
+      oct18: 'stuff',
+      oct19: 'stuff',
+      oct20: 'stuff',
+      oct21: 'stuff',
+      oct22: 'stuff',
+      oct23: 'stuff',
+      oct24: 'stuff',
+      oct25: 'stuff',
+      oct26: 'stuff',
+      oct27: 'stuff',
+      oct28: 'stuff',
+      oct29: 'stuff',
+      oct30: 'stuff',
+      oct31: 'stuff',
+  }
+  const expectedUser = {
+    ...makeExpectedUser([user], maliciousUser),
+    desoverviewcription: 'Naughty naughty very naughty &lt;script&gt;alert(\"xss\");&lt;/script&gt;',
+    title: `Bad image <img src="https://url.to.file.which/does-not.exist">. But not <strong>all</strong> bad.`,
+  }
+  return {
+    maliciousUdser,
+    expectedUser,
+  }
+}
 function makeUsersFixtures() {
   const testUsers = makeUsersArray()
   return { testUsers }
 }
-
 function cleanTables(db) {
   return db.transaction(trx =>
     trx.raw(
       `TRUNCATE
-        hitchcocktober_users,
+        hitchcocktober_users
       `
     )
     .then(() =>
       Promise.all([
-        trx.raw(`ALTER SEQUENCE hitchcocktober_users_id_seq minvalue 0 START WITH 1`),
-        trx.raw(`SELECT setval('hitchcocktober_users_id_seq', 0)`),
+        trx.raw(`SELECT setval('hitchcocktober_users_id_seq', 1)`),
+
       ])
     )
   )
@@ -568,34 +319,27 @@ function seedUsers(db, users) {
       )
     )
 }
-// function seedCoursesTables(db, users, courses, comments=[]) {
-//   // use a transaction to group the queries and auto rollback on any failure
-//   return db.transaction(async trx => {
-//     await seedUsers(trx, users)
-//     await trx.into('hitchcocktober_courses').insert(courses)
-//     // update the auto sequence to match the forced id values
-//     await trx.raw(
-//       `SELECT setval('hitchcocktober_courses_id_seq', ?)`,
-//       [courses[courses.length - 1].id],
-//     )
-//     // only insert comments if there are some, also update the sequence counter
-//     if (comments.length) {
-//       await trx.into('hitchcocktober_comments').insert(comments)
-//       await trx.raw(
-//         `SELECT setval('hitchcocktober_comments_id_seq', ?)`,
-//         [comments[comments.length - 1].id],
-//       )
-//     }
-//   })
-// }
-// function seedMaliciousCourse(db, user, course) {
-//   return seedUsers(db, [user])
-//     .then(() =>
-//       db
-//         .into('hitchcocktober_courses')
-//         .insert([course])
-//     )
-// }
+function seedUsersTables(db, users) {
+
+  return db.transaction(async trx => {
+    await seedUsers(trx, users)
+    await trx.into('hitchcocktober_users').insert(users)
+
+    await trx.raw(
+      `SELECT setval('hitchcocktober_users_id_seq', ?)`,
+      [users[users.length - 1].id],
+    )
+
+  })
+}
+function seedMaliciousUser(db, user) {
+  return seedUsers(db, [user])
+    .then(() =>
+      db
+        .into('hitchcocktober_users')
+        .insert([user])
+    )
+}
 
 function makeAuthHeader(user, secret = process.env.JWT_SECRET) {
   const token = jwt.sign({ user_id: user.id }, secret, {
@@ -606,9 +350,13 @@ function makeAuthHeader(user, secret = process.env.JWT_SECRET) {
 }
 
 module.exports = {
-  makeUsersFixtures,
   makeUsersArray,
+  makeExpectedUser,
+  makeMaliciousUser,
+  makeUsersFixtures,
   cleanTables,
+  seedUsersTables,
+  seedMaliciousUser,
   makeAuthHeader,
   seedUsers,
 }

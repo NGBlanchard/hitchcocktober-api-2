@@ -4,9 +4,9 @@
 const app = require('../src/app');
 
 describe('App', () => {
-	it('GET / responds with 200 containing "With a little help from my friends!"', () => {
+	it('GET / responds with 200 containing "Welcome to Hitchcocktober &#127875"', () => {
 		return supertest(app)
 		.get('/')
-		.expect(200, 'With a little help from my friends!')
+		.expect(200, 'Welcome to Hitchcocktober &#127875')
 	})
 })
