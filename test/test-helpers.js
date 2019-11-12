@@ -301,7 +301,10 @@ function cleanTables(db) {
     )
     .then(() =>
       Promise.all([
-        trx.raw(`SELECT setval('hitchcocktober_users_id_seq', 1)`),
+        trx.raw(`ALTER SEQUENCE hitchcocktober_users_id_seq minvalue 0 START WITH 1`),
+        trx.raw(`ALTER SEQUENCE hitchcocktober_movies_id_seq minvalue 0 START WITH 1`),
+        trx.raw(`SELECT setval("hitchcocktober_users_id_seq", 1)`),
+        trx.raw(`SELECT setval("hitchcocktober_movies_id_seq", 1)`),
       ])
     )
   )
@@ -313,7 +316,6 @@ function seedUsers(db, users) {
   }))
   return db.into('hitchcocktober_users').insert(preppedUsers)
     .then(() =>
-      // update the auto sequence to stay in sync
       db.raw(
         `SELECT setval('hitchcocktober_users_id_seq', ?)`,
         [users[users.length - 1].id],
@@ -326,9 +328,8 @@ function seedMovies(db, movies) {
   }))
   return db.into('hitchcocktober_movies').insert(preppedMovies)
     .then(() =>
-      // update the auto sequence to stay in sync
       db.raw(
-        `SELECT setval('hitchcocktober_movies_id_seq', ?)`,
+        'SELECT setval("hitchcocktober_movies_id_seq", ?)',
         [movies[movies.length - 1].id],
       )
     )
@@ -353,7 +354,7 @@ function seedMoviesTables(db, movies) {
     await trx.into('hitchcocktober_movies').insert(movies)
 
     await trx.raw(
-      `SELECT setval('hitchcocktober_movies_id_seq', ?)`,
+      'SELECT setval("hitchcocktober_movies_id_seq", ?)',
       [movies[movies.length - 1].id],
     )
 
