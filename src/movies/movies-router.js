@@ -63,7 +63,7 @@ moviesRouter
       .then(movie => {
         if (!movie) {
           return res.status(404).json({
-            error: { message: `Movie doesn't exist` }
+            error: `Movie doesn't exist`
           })
         }
         res.movie = movie
